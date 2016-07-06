@@ -10,10 +10,10 @@ import java.util.List;
  * 百度PagerAdapter………………………………
  * Created by my on 2016/7/5.
  */
-public class ViewPageAdapter extends PagerAdapter {
+public class GuideViewPageAdapter extends PagerAdapter {
     private List<View> views;
 
-    public ViewPageAdapter(List<View> views) {
+    public GuideViewPageAdapter(List<View> views) {
         this.views = views;
     }
 

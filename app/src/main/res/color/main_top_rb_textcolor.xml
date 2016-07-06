@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--在什么文件夹下，就有什么样的标签，现在是颜色，item里面就有颜色标签，后面是选择-->
+    <item android:color="#6AC37A" android:state_checked="true" />
+    <item android:color="#ffffff" />
+    <!--6AC37A这里默认是其它颜色，很郁闷，不管后面是什么boolean值-->
+    <!--state_enabled滑动的时候用，按键的时候用state_checked
+    默认值必须放在不是默认值的后面!!!!!!!!!!!!!!!!!!!-->
+</selector>

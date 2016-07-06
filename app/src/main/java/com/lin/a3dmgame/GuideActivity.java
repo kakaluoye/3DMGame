@@ -14,7 +14,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.lin.a3gmgame.adapter.ViewPageAdapter;
+import com.lin.a3gmgame.adapter.GuideViewPageAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,7 +60,7 @@ public class GuideActivity extends AppCompatActivity implements ViewPager.OnPage
         views.add(view1);
         views.add(view2);
         views.add(view3);
-        adapter = new ViewPageAdapter(views);
+        adapter = new GuideViewPageAdapter(views);
         vp.setAdapter(adapter);
         vp.addOnPageChangeListener(this);
     }
