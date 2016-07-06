@@ -99,47 +99,49 @@ public class MainActivity extends FragmentActivity implements ViewPager.OnPageCh
     public void onCheckedChanged(RadioGroup group, int checkedId) {
         switch (checkedId){
             case R.id.main_top_rb1:
-                viewPager_center.setCurrentItem(0);
+                //这是点击按钮，上面按钮的监听。效果是：按钮点击，下面的ViewPager内容也跟着变
+                // 就需要点击后设置下ViewPager当前对应的哪个条目即刻。
+                viewPager_center.setCurrentItem(1);
                 Toast.makeText(MainActivity.this,"top rb01",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.main_top_rb2:
-                viewPager_center.setCurrentItem(1);
+                viewPager_center.setCurrentItem(2);
                 Toast.makeText(MainActivity.this,"top rb02",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.main_top_rb3:
-                viewPager_center.setCurrentItem(2);
+                viewPager_center.setCurrentItem(3);
                 Toast.makeText(MainActivity.this,"top rb03",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.main_top_rb4:
-                viewPager_center.setCurrentItem(3);
+                viewPager_center.setCurrentItem(4);
                 Toast.makeText(MainActivity.this,"top rb04",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.main_top_rb5:
-                viewPager_center.setCurrentItem(4);
+                viewPager_center.setCurrentItem(5);
                 Toast.makeText(MainActivity.this,"top rb05",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.main_top_rb6:
-                viewPager_center.setCurrentItem(5);
+                viewPager_center.setCurrentItem(6);
                 Toast.makeText(MainActivity.this,"top rb06",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.main_top_rb7:
-                viewPager_center.setCurrentItem(6);
+                viewPager_center.setCurrentItem(7);
                 Toast.makeText(MainActivity.this,"top rb07",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.main_top_rb8:
-                viewPager_center.setCurrentItem(7);
+                viewPager_center.setCurrentItem(8);
                 Toast.makeText(MainActivity.this,"top rb08",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.main_top_rb9:
-                viewPager_center.setCurrentItem(8);
+                viewPager_center.setCurrentItem(9);
                 Toast.makeText(MainActivity.this,"top rb09",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.main_top_rb10:
-                viewPager_center.setCurrentItem(9);
+                viewPager_center.setCurrentItem(10);
                 Toast.makeText(MainActivity.this,"top rb010",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.main_bottom_rb1:
-                viewPager_center.setCurrentItem(2);
+                viewPager_center.setCurrentItem(0);
                 Toast.makeText(MainActivity.this,"bottom rb01",Toast.LENGTH_SHORT).show();
                 hsv.smoothScrollTo(0,0);//这个？？？？知道移动到前面第一位
                 break;
