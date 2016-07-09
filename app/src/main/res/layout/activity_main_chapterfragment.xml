@@ -4,44 +4,137 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
-    <FrameLayout
+    <HorizontalScrollView
+        android:id="@+id/main_top_hsv"
         android:layout_width="match_parent"
-        android:layout_height="150dp">
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_top_banner_bg"
+        android:fillViewport="true"
+        android:scrollbars="none">
 
-        <com.lin.a3gmgame.view.MainChapterFragmentViewpager
-            android:id="@+id/main_chapterfragment_vp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></com.lin.a3gmgame.view.MainChapterFragmentViewpager>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal"
+        <RadioGroup
+            android:id="@+id/main_top_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <View
-                android:layout_width="5dp"
-                android:layout_height="5dp"
-                android:background="@drawable/point_shape" />
+            <RadioButton
+                android:id="@+id/main_top_rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:paddingLeft="25dp"
+                android:paddingTop="10dp"
+                android:text="文章首页"
+                android:textColor="@color/main_top_rb_textcolor"
+                android:textSize="15sp" />
 
-            <View
-                android:layout_width="5dp"
-                android:layout_height="5dp"
-                android:background="@drawable/point_shape" />
+            <RadioButton
+                android:id="@+id/main_top_rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="游戏新闻"
+                android:textColor="@color/main_top_rb_textcolor"
+                android:textSize="15sp" />
 
-            <View
-                android:layout_width="5dp"
-                android:layout_height="5dp"
-                android:background="@drawable/point_shape" />
-        </LinearLayout>
-    </FrameLayout>
+            <RadioButton
+                android:id="@+id/main_top_rb3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="游戏杂谈"
+                android:textColor="@color/main_top_rb_textcolor"
+                android:textSize="15sp" />
 
-    <TextView
-        android:id="@+id/main_chapterfragment_tv"
+            <RadioButton
+                android:id="@+id/main_top_rb4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="硬件信息"
+                android:textColor="@color/main_top_rb_textcolor"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/main_top_rb5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="游戏前瞻"
+                android:textColor="@color/main_top_rb_textcolor"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/main_top_rb6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="游戏评测"
+                android:textColor="@color/main_top_rb_textcolor"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/main_top_rb7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="原创精品"
+                android:textColor="@color/main_top_rb_textcolor"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/main_top_rb8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="游戏盘点"
+                android:textColor="@color/main_top_rb_textcolor"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/main_top_rb9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="时事焦点"
+                android:textColor="@color/main_top_rb_textcolor"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/main_top_rb10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:paddingLeft="30dp"
+                android:paddingTop="10dp"
+                android:text="攻略中心"
+                android:textColor="@color/main_top_rb_textcolor"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+    </HorizontalScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mian_activity_viewpager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="第几页呢？"
-        android:textColor="#ff0000"/>
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+
 </LinearLayout>
